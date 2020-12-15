@@ -5,14 +5,14 @@ import {FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon} from
 
 const ShareButtons =(shareUrl) =>{
     console.log("share button data:", shareUrl);
-    console.log("share button data2:", shareUrl.url);
+    console.log("share button data2:", shareUrl);
    
     return(                
     <div>
     <FacebookShareButton url={shareUrl.url}>
     <FacebookIcon size={32} round={true} />
     </FacebookShareButton>
-    <TwitterShareButton url={shareUrl}>
+    <TwitterShareButton url={shareUrl.url}>
     <TwitterIcon size={32} round={true} />
     </TwitterShareButton>
     </div>
